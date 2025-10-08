@@ -1,0 +1,593 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*body
+body {
+    background-color: #ffd8ac;
+}*/
+
+/*splash*/
+.splash {
+    position: fixed;
+    top: 0; bottom: 0; right: 0; left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 9999;
+    background: linear-gradient(rgba(255, 245, 225, 0.1), rgba(79, 65, 37, 0.9)), url(prewedb1.jpg) no-repeat center center/cover;
+}
+
+.splash-content .p1s {
+    font-size: 130px;
+    margin-bottom: 60px;
+    font-family: 'Tangerine', cursive;
+    text-align: center;
+    text-shadow: 3px 3px 6px rgba(255, 245, 225, 0.5);
+}
+.splash-content .p1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', cursive;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 6px rgba(255, 245, 225, 0.5);
+}
+.splash-content .p2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.splash-content button {
+    padding: 12px 25px;
+    font-size: 17px;
+    border: none;
+    border-radius: 15px;
+    background: rgba(250, 222, 201, 0.811);
+    color: rgb(127, 83, 41);
+    cursor: pointer;
+    transition: 0.5s;
+    margin-inline: 300px;
+}
+.splash-content button:hover {
+    background: rgb(241, 194, 157);
+    color: rgb(255, 255, 255);
+}
+
+/*main*/
+.main {
+    display: none;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero {
+    background: linear-gradient(rgba(255, 245, 225, 0.1), rgba(112, 94, 57, 0.7)), url(prewedb1.jpg);
+    background-size: cover;
+    height: 790px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    
+}
+.hero .p3 {
+    font-family: 'Tangerine', cursive;
+    text-shadow: 3px 3px 5px rgba(71, 38, 22, 0.5);
+    font-size: 130px;
+    margin-top: 60px; margin-left: 60px; margin-bottom: 0;
+}
+.hero .p3s {
+    font-family: 'Tangerine', cursive;
+    text-shadow: 2px 3px 5px rgba(71, 38, 22, 0.5);
+    font-size: 130px;
+    margin-top: 0; margin-left: 120px; margin-bottom: 0;
+}
+.hero .p4 {
+    font-family: 'Poppins', cursive;
+    text-shadow: 3px 2px 4px rgba(87, 38, 16, 0.5);
+    font-size: 19px;
+    margin-left: 5px; margin-top: 0px;
+}
+
+.ayat {
+    margin-left: 60px;
+}
+.ayat .ayat1 {
+    font-family: 'Scheherazade New',serif;
+    direction: ltr;
+    font-size: 25px;
+    margin-top: 4px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.ayat .ayat2 {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    margin-top: 0;
+}
+
+/*countdown*/
+
+.latarbelakang {
+  height: 100vh;
+  background: url('prewedb3.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.box {
+    border: 2px none;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    position: relative;
+}
+.countdown {
+    padding: 40px 20px;
+}
+
+.countdown h2 {
+    font-family: 'Tangerine', cursive;
+    font-weight: bold;
+    color: rgb(88, 49, 10);
+    font-size: 90px;
+    margin-bottom: 20px;
+}
+
+#timer {
+    font-size: 30px;
+    margin-top: 13px;
+}
+#timer span {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 30px;
+    font-size: 30px;
+    color: rgb(88, 49, 10);
+}
+
+/*Bride*/
+.bride {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px;
+    gap: 60px;
+    background-color: #faf8f1;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.image img {
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    max-width: 350px;
+    font-family: 'Poppins', cursive;
+}
+.subtitle {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #b8b8b8;
+    margin-bottom: 10px;
+
+}
+.name {
+    font-size: 30px;
+    line-height: 1.1;
+    color: #4a463f;
+}
+.desc {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #666;
+}
+.instagram {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #666;
+}
+.instagram .a {
+    color: #4a463f;
+}
+.instagram .a:hover {
+    color: #a6a6a6;
+}
+.icon {
+    width: 16px;
+    height: 16px;
+}
+/*groom*/
+.groom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px;
+    padding-bottom: 0;
+    padding-top: 0;
+    gap: 60px;
+    background-color: #faf8f1;
+    flex-direction: row-reverse;
+}
+.image img {
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    max-width: 350px;
+    font-family: 'Poppins', cursive;
+}
+.subtitle {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #b8b8b8;
+    margin-bottom: 10px;
+
+}
+.name {
+    font-size: 30px;
+    line-height: 1.1;
+    color: #4a463f;
+}
+.desc {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #666;
+}
+.instagram {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #666;
+}
+.instagram .a {
+    color: #4a463f;
+}
+.instagram .a:hover {
+    color: #a6a6a6;
+}
+.icon {
+    width: 16px;
+    height: 16px;
+}
+.bride + .groom {
+  margin-top: 0;
+}
+
+/*detail acara*/
+.detail {
+    background: rgb(245,239,230);
+    height: 80vh;
+    display: flex;
+}
+
+.resepsi {
+    font-weight: 200;
+    font-family: 'Lucida Sans';
+    font-size: 40px;
+    margin-top: 100px;
+    margin-left: 310px;
+    color: rgb(80, 80, 80);
+}
+.tanggal {
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 310px;
+    color: rgb(85, 85, 85);
+}
+.waktu {
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    margin-top: 3px;
+    margin-left: 310px;
+    color: rgb(85, 85, 85);
+}
+.lok1 {
+    font-weight: 400;
+    font-family: 'Verdana';
+    font-size: 12px;
+    margin-top: 42px;
+    margin-left: 310px;
+    color: rgb(190, 184, 174);
+    letter-spacing: 1px;
+}
+.lok2 {
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 310px;
+    color: rgb(85, 85, 85);
+}
+.lok3 {
+    font-weight: 100;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 13px;
+    margin-top: 4px;
+    margin-left: 310px;
+    color: rgb(92, 92, 92);
+}
+.lok4 {
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    margin-top: 15px;
+    margin-left: 328px;
+    letter-spacing: 3px;
+}
+.lok4 a {
+    color: rgb(92, 92, 92);
+    text-decoration: none;
+}
+.lok5 {
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 310px;
+    color: rgb(85, 85, 85);
+}
+
+/*gallery*/
+    .gallery {
+    display: flex;
+    height: 200vh;
+    background-color: #faf8f1;
+    }
+    .gallerytext {
+        margin-inline: auto;
+        text-align: center;
+        align-items: center;
+    }
+    .gallerytext h2 {
+        font-size: 20px;
+        font-family: 'Poppins', cursive;
+        font-weight: 700;
+        color: rgb(160, 159, 159);
+        align-items: center;
+        margin-top: 150px;
+        margin-inline: auto;
+        letter-spacing: 2px;
+    }
+    .gallerytext h1 {
+        font-family: 'Lucida Sans';
+        color: #666;
+        font-size: 60px;
+        margin-top: 7px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    .gallerytext .h11 {
+        font-family: 'Playball', cursive;
+        font-weight: 100;
+        color: #666;
+        font-size: 65px;
+        margin-top: 1px;
+    }
+    .gallerysection {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        padding: 20px;
+    }
+    .photo {
+        flex: 0 0 auto;
+        width: 250px;
+        scroll-snap-align: start;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    }
+    .photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        cursor: crosshair;
+    }
+    /*gift
+    .gift {
+        display: flex;
+        height: 80vh;
+        background-color: #faf8f1;
+    }
+    .membagi {
+        justify-content: space-between;
+        display: flex;
+        padding: 20px;
+    }
+    .bagip2 {
+        flex: 1;
+    }
+    .kiri h3{
+        font-family: 'Poppins', cursive;
+        font-size: 40px;
+        font-weight: 800;
+        color: #4a463f;
+        margin-left: 90px;
+        text-align: center;
+    }
+    .kiri p{
+        font-family: 'Poppins', cursive;
+        font-size: 12px;
+        font-weight: 200;
+        color: #4a463f;
+        margin-left: 90px;
+        margin-top: 40px;
+        max-width: 300px;
+        text-align: center;
+    }
+    .kanan p{
+        font-family: 'Poppins', cursive;
+        font-size: 12px;
+        font-weight: 200;
+        color: #4a463f;
+        margin-left: 90px;
+        margin-top: 40px;
+        max-width: 300px;
+        text-align: center;
+    }*/
+
+    /*Komen*/
+
+    .komen {
+        height: 70vh;
+        background-color: #faf8f1;
+    }
+
+    .komenn {
+      max-width: 900px;
+      background: #e6e2d1;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      letter-spacing: 2px;
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    .form {
+      margin-bottom: 30px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      width: 60%;
+      padding: 12px;
+      border: 1px solid #dcdcdc;
+      border-radius: 6px;
+      font-size: 15px;
+      margin-bottom: 15px;
+      resize: none;
+    }
+
+    button {
+      background-color: #a6a6a6;
+      color: white;
+      border: none;
+      padding: 10px 24px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #333;
+    }
+
+    /*footer*/
+    .latar {
+        height: 100vh;
+        background: linear-gradient(rgb(250, 248, 241), rgba(250, 248, 241, 0.0)), url(prewedb1.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .latar h1 {
+        font-weight: bold;
+        font-family: 'Verdana';
+        font-size: 40px;
+        margin-top: 45px;
+        margin-inline: auto;
+        color: #ffffff;
+        letter-spacing: 1px;
+    }
+    .latar p {
+        font-weight: 800;
+        font-family: 'QUicksand', cursive;
+        font-size: 18px;
+        margin-top: 15px;
+        margin-inline: auto;
+        color: #ffffff;
+        letter-spacing: 1px;
+    }
+
+    /*animasi*/
+    @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+    }
+
+    section, header {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+    }
+
+    section.show, header.show {
+    opacity: 1;
+    transform: translateY(0);
+    }
+
+    .photo img {
+    transition: transform 0.8s ease, box-shadow 0.5s ease;
+    }
+    .photo img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    button {
+    transition: all 0.4s ease;
+    }
+    button:hover {
+    transform: scale(1.05);
+    }
+
+    .hero {
+    animation: fadeIn 1.5s ease forwards;
+    }
+
+    .splash-content {
+    animation: fadeIn 2s ease-in-out;
+    }
+
+    .latar h1, .latar p {
+    animation: fadeIn 2s ease forwards;
+    }
+
+    .komen .form {
+    animation: fadeIn 1.2s ease forwards;
+    }
